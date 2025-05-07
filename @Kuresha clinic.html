@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuresha Clinic - Appointment Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background: #1e90ff;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .main-heading {
+            font-size: 48px;
+            margin-top: 30px;
+            animation: fadeSlideDown 1.5s ease-out;
+        }
+        @keyframes fadeSlideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        section {
+            padding: 20px;
+        }
+        .appointment-form {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background: #1e90ff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #00bfff;
+        }
+        footer {
+            background: #1e90ff;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Dr. Sirajuddin Ansari - Appointment Booking
+    </header>
+
+    <!-- 🔥 New Animated Heading -->
+    <h1 class="main-heading">Kuresha Clinic</h1>
+
+    <section>
+        <h1>Book Your Appointment</h1>
+        <div class="appointment-form">
+            <form action="https://formspree.io/f/mdkgzeoe" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Dr. Sirajuddin Ansari - All Rights Reserved
+    </footer>
+</body>
+</html>
